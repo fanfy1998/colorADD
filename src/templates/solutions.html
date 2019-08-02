@@ -1,18 +1,20 @@
+{% load static from staticfiles %}
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/solutions.css">
-  <link rel="stylesheet" href="css/nav.css">
-  <link rel="stylesheet" href="css/labs.css">
-  <link rel="stylesheet" href="css/masonry.css">
-  <link rel="stylesheet" href="css/hamburguer.css">
+  <link rel="stylesheet" href="{% static 'css/solutions.css' %}">
+  <link rel="stylesheet" href="{% static 'css/nav.css' %}">
+  <link rel="stylesheet" href="{% static 'css/labs.css' %}">
+  <link rel="stylesheet" href="{% static 'css/masonry.css' %}">
+  <link rel="stylesheet" href="{% static 'css/hamburguer.css' %}">
   <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
   <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
-  <script src="js/scroll.js"></script>
+  <script src="{% static 'js/scroll.js' %}"></script>
   <title>Solutions.</title>
 </head>
 
@@ -21,14 +23,14 @@
   <nav>
     <div class="navbar">
       <div class="logo">
-        <a href="index.html"><img src="img/logo.png" alt="logo_colorAdd"></a>
+        <a href=".."><img src="{% static 'img/logo.png' %}" alt="logo_colorAdd"></a>
       </div>
       <div class="options">
         <ul>
-          <li><a href="about.html">About</a></li>
-          <li><a href="code.html">Code</a></li>
-          <li><a href="solutions.html">Solutions</a></li>
-          <li><a href="#">FAQ</a></li>
+          <li><a href="../about">About</a></li>
+          <li><a href="../code">Code</a></li>
+          <li><a href="../solutions">Solutions</a></li>
+          <li><a href="../FAQ">FAQ</a></li>
           <button id="myBtn">Contact Us</button>
         </ul>
       </div>
@@ -43,16 +45,16 @@
     </label>
     <div class="menu">
       <ul>
-        <a href="about.html">
+        <a href="../about">
           <li>About</li>
         </a>
-        <a href="code.html">
+        <a href="../code">
           <li>Code</li>
         </a>
-        <a href="solutions.html">
+        <a href="../solutions">
           <li>Solutions</li>
         </a>
-        <a href="#">
+        <a href="../faq">
           <li>FAQ</li>
         </a>
         <a href="#">
@@ -61,7 +63,7 @@
       </ul>
     </div>
     <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-    <script src="js/hamburguer.js"></script>
+    <script src="{% static 'js/hamburguer.js' %}"></script>
   </section>
 
   <div id="myModal" class="modal">
@@ -170,36 +172,36 @@
         <div class="wrapper">
           <div class="masonry">
             <div class="brick">
-              <img id="pic" src="img/solutions/boombapwear.jpg">
+              <img id="pic" src="{% static 'img/solutions/boombapwear.jpg' %}">
               <div class="controls">
-                <a href="#"><img src="img/react-01.png" width="90%"></a>
-                <a href=><img src="img/react-03.png" width="90%"></a>
-                <a href="#"><img src="img/react-02.png" width="90%"></a>
+                <a href="#"><img src="{% static 'img/react-01.png' %}" width="90%"></a>
+                <a href="#"><img src="{% static 'img/react-03.png' %}" width="90%"></a>
+                <a href="#"><img src="{% static 'img/react-02.png' %}" width="90%"></a>
               </div>
             </div>
             <div class="brick">
-              <img src="img/solutions/Textil Zippy.jpg">
+              <img src="{% static 'img/solutions/Textil Zippy.JPG' %}">
             </div>
             <div class="brick">
-              <img src="img/solutions/etiquetas.jpg">
+              <img src="{% static 'img/solutions/etiquetas.jpg' %}">
             </div>
             <div class="brick">
-              <img src="img/solutions/blueberries.jpg">
+              <img src="{% static 'img/solutions/blueberries.jpg' %}">
             </div>
             <div class="brick">
-              <img src="img/solutions/pears.jpg">
+              <img src="{% static 'img/solutions/pears.jpg' %}">
             </div>
             <div class="brick">
-              <img src="img/solutions/easter-eggs.jpg">
+              <img src="{% static 'img/solutions/easter-eggs.jpg' %}">
             </div>
             <div class="brick">
-              <img src="img/solutions/lemons.jpg">
+              <img src="{% static 'img/solutions/lemons.jpg' %}">
             </div>
             <div class="brick">
-              <img src="img/solutions/cherries.jpg">
+              <img src="{% static 'img/solutions/cherries.jpg' %}">
             </div>
             <div class="brick">
-              <img src="img/solutions/grapes.jpg">
+              <img src="{% static 'img/solutions/grapes.jpg' %}">
             </div>
           </div>
         </div>
@@ -216,31 +218,31 @@
         <div class="wrapper">
           <div class="masonry">
             <div class="brick">
-              <img src="img/solutions/Banner ponto verde.jpg">
+              <img src="{% static 'img/solutions/Banner ponto verde.jpg' %}">
             </div>
             <div class="brick">
-              <img src="img/solutions/Reciclagem (2).jpg">
+              <img src="{% static 'img/solutions/Reciclagem (2).jpg' %}">
             </div>
             <div class="brick">
-              <img src="img/solutions/Separacao resid.jpg">
+              <img src="{% static 'img/solutions/Separacao resid.jpg' %}">
             </div>
             <div class="brick">
-              <img src="img/solutions/blueberries.jpg">
+              <img src="{% static 'img/solutions/blueberries.jpg' %}">
             </div>
             <div class="brick">
-              <img src="img/solutions/pears.jpg">
+              <img src="{% static 'img/solutions/pears.jpg' %}">
             </div>
             <div class="brick">
-              <img src="img/solutions/easter-eggs.jpg">
+              <img src="{% static 'img/solutions/easter-eggs.jpg' %}">
             </div>
             <div class="brick">
-              <img src="img/solutions/lemons.jpg">
+              <img src="{% static 'img/solutions/lemons.jpg' %}">
             </div>
             <div class="brick">
-              <img src="img/solutions/cherries.jpg">
+              <img src="{% static 'img/solutions/cherries.jpg' %}">
             </div>
             <div class="brick">
-              <img src="img/solutions/grapes.jpg">
+              <img src="{% static 'img/solutions/grapes.jpg' %}">
             </div>
           </div>
         </div>
@@ -257,31 +259,31 @@
         <div class="wrapper">
           <div class="masonry">
             <div class="brick">
-              <img src="img/solutions/24.jpg">
+              <img src="{% static 'img/solutions/24.jpg' %}">
             </div>
             <div class="brick">
-              <img src="img/solutions/Bilhetes.jpg">
+              <img src="{% static 'img/solutions/Bilhetes.jpg' %}">
             </div>
             <div class="brick">
-              <img src="img/solutions/ColorADD_Uno.jpg">
+              <img src="{% static 'img/solutions/ColorADD_Uno.jpg' %}">
             </div>
             <div class="brick">
-              <img src="img/solutions/fotografia 4.jpg">
+              <img src="{% static 'img/solutions/fotografia 4.JPG' %}">
             </div>
             <div class="brick">
-              <img src="img/solutions/IMG_2919.jpg">
+              <img src="{% static 'img/solutions/IMG_2919.JPG' %}">
             </div>
             <div class="brick">
-              <img src="img/solutions/noote_ caderno.jpg">
+              <img src="{% static 'img/solutions/noote_ caderno.jpg' %}">
             </div>
             <div class="brick">
-              <img src="img/solutions/lemons.jpg">
+              <img src="{% static 'img/solutions/lemons.jpg' %}">
             </div>
             <div class="brick">
-              <img src="img/solutions/cherries.jpg">
+              <img src="{% static 'img/solutions/cherries.jpg' %}">
             </div>
             <div class="brick">
-              <img src="img/solutions/grapes.jpg">
+              <img src="{% static 'img/solutions/grapes.jpg' %}">
             </div>
           </div>
         </div>
@@ -347,10 +349,10 @@
   <div class="footer_sep"> </div>
 
   <div class="footer_social">
-    <a href="https://www.facebook.com/ColorADDoficial/" target="_blank"><img src="img/fb.png" width="3%"></a>
-    <a href="https://www.linkedin.com/company/coloradd/" target="_blank"><img src="img/lkin.png" width="3%"></a>
-    <a href="https://twitter.com/coloraddoficial" target="_blank"><img src="img/tt.png" width="3%"></a>
-    <a href="https://www.instagram.com/coloradd_oficial/" target="_blank"><img src="img/insta.png" width="3%"></a>
+    <a href="https://www.facebook.com/ColorADDoficial/" target="_blank"><img src="{% static 'img/fb.png' %}" width="3%"></a>
+    <a href="https://www.linkedin.com/company/coloradd/" target="_blank"><img src="{% static 'img/lkin.png' %}" width="3%"></a>
+    <a href="https://twitter.com/coloraddoficial" target="_blank"><img src="{% static 'img/tt.png' %}" width="3%"></a>
+    <a href="https://www.instagram.com/coloradd_oficial/" target="_blank"><img src="{% static 'img/insta.png' %}" width="3%"></a>
   </div>
 
 </footer>

@@ -1,14 +1,16 @@
+{% load static from staticfiles %}
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="css/code.css">
-  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="{% static 'css/code.css' %}">
+  <link rel="stylesheet" href="{% static 'css/nav.css' %}">
   <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
   <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
-  <script src="js/scroll.js"></script>
+  <script src="{% static 'js/scroll.js' %}"></script>
   <title>Code.</title>
 </head>
 
@@ -18,15 +20,16 @@
   <nav>
     <div class="navbar">
       <div class="logo">
-        <a href="index.html"><img src="img/logo.png" alt="logo_colorAdd" width="3%"></a>
+        <a href=".."><img src="{% static 'img/logo.png' %}" alt="logo_colorAdd" width="3%"></a>
       </div>
       <div class="options">
         <ul>
-          <li><a href="about.html">About</a></li>
-          <li><a href="code.html">Code</a></li>
-          <li><a href="solutions.html">Solutions</a></li>
-          <li><a href="#">FAQ</a></li>
-          <button type="button" name="button">Contact Us</button>
+          <li><a href="../about">About</a></li>
+          <li><a href="../code">Code</a></li>
+          <li><a href="../solutions">Solutions</a></li>
+          <li><a href="../FAQ">FAQ</a></li>
+          <!--<button id="myBtn">Contact Us</button> TESTE PORQUE NAO ESTA A FUNCIONAR-->
+          <button type="button" name="button">Contact Us</button>  <!--ESTE ERA O QUE ESTAVA ANTES -->
         </ul>
       </div>
     </div>
@@ -38,9 +41,9 @@
       <h3>CODE</h3>
     </div>
     <div class="code_legend">
-      <a><img src="img/code_logo.png"></a>
+      <a><img src="{% static 'img/code_logo.png' %}"></a>
       <div class="legend">
-        <img src="img/legend.jpg">
+        <img src="{% static 'img/legend.jpg' %}">
       </div>
     </div>
   </section>
@@ -48,7 +51,7 @@
   <section id="code_video">
     <div class="container_video">
       <video width="50%" autoplay controls muted>
-        <source src="img/code_video.mp4" type="video/mp4">
+        <source src="{% static 'img/code_video.mp4' %}" type="video/mp4">
       </video>
     </div>
   </section>
@@ -80,10 +83,10 @@
   <div class="footer_sep"> </div>
 
   <div class="footer_social">
-    <a href="https://www.facebook.com/ColorADDoficial/" target="_blank"><img src="img/fb.png" width="3%"></a>
-    <a href="https://www.linkedin.com/company/coloradd/" target="_blank"><img src="img/lkin.png" width="3%"></a>
-    <a href="https://twitter.com/coloraddoficial" target="_blank"><img src="img/tt.png" width="3%"></a>
-    <a href="https://www.instagram.com/coloradd_oficial/" target="_blank"><img src="img/insta.png" width="3%"></a>
+    <a href="https://www.facebook.com/ColorADDoficial/" target="_blank"><img src="{% static 'img/fb.png' %}" width="3%"></a>
+    <a href="https://www.linkedin.com/company/coloradd/" target="_blank"><img src="{% static 'img/lkin.png' %}" width="3%"></a>
+    <a href="https://twitter.com/coloraddoficial" target="_blank"><img src="{% static 'img/tt.png' %}" width="3%"></a>
+    <a href="https://www.instagram.com/coloradd_oficial/" target="_blank"><img src="{% static 'img/insta.png' %}" width="3%"></a>
   </div>
 
 </footer>

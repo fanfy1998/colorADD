@@ -1,3 +1,5 @@
+{% load static from staticfiles %}
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
@@ -7,14 +9,14 @@
   <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
   <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
-  <script src="js/scroll.js"></script>
-  <script src="js/map.js"></script>
-  <script src="js/cases.js"></script>
+  <script src="{% static 'js/scroll.js' %}"></script>
+  <script src="{% static 'js/map.js' %}"></script>
+  <script src="{% static 'js/cases.js' %}"></script>
   <script src='https://api.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.js'></script>
   <link href='https://api.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.css' rel='stylesheet' />
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/nav.css">
-  <link rel="stylesheet" href="css/hamburguer.css">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <link rel="stylesheet" href="{% static 'css/nav.css' %}">
+  <link rel="stylesheet" href="{% static 'css/hamburguer.css' %}">
   <title>colorADD</title>
 </head>
 
@@ -22,14 +24,14 @@
   <nav>
     <div class="navbar">
       <div class="logo">
-        <a href="index.html"><img src="img/logo.png" alt="logo_colorAdd"></a>
+        <a href=".."><img src="{% static 'img/logo.png' %}" alt="logo_colorAdd"></a>
       </div>
       <div class="options">
         <ul>
-          <li><a href="about.html">About</a></li>
-          <li><a href="code.html">Code</a></li>
-          <li><a href="solutions.html">Solutions</a></li>
-          <li><a href="#">FAQ</a></li>
+          <li><a href="../about">About</a></li>
+          <li><a href="../code">Code</a></li>
+          <li><a href="../solutions">Solutions</a></li>
+          <li><a href="../FAQ">FAQ</a></li>
           <button id="myBtn">Contact Us</button>
         </ul>
       </div>
@@ -44,16 +46,16 @@
     </label>
     <div class="menu">
       <ul>
-        <a href="about.html">
+        <a href="../about">
           <li>About</li>
         </a>
-        <a href="code.html">
+        <a href="../code">
           <li>Code</li>
         </a>
-        <a href="solutions.html">
+        <a href="../solutions">
           <li>Solutions</li>
         </a>
-        <a href="#">
+        <a href="../FAQ">
           <li>FAQ</li>
         </a>
         <a href="#">
@@ -62,7 +64,7 @@
       </ul>
     </div>
     <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-    <script src="js/hamburguer.js"></script>
+    <script src="{% static 'js/hamburguer.js' %}"></script>
   </section>
 
   <div id="myModal" class="modal">
@@ -190,7 +192,7 @@
     </div>
 
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-    <script src="js/reveal.js"></script>
+    <script src="{% static 'js/reveal.js' %}"></script>
     <div class="home_title">
       <h3>COLOR IS FOR ALL.</h3>
     </div>
@@ -208,7 +210,7 @@
     <div class="intro_container">
 
       <div class="intro_img">
-        <img src="img/neiva.jpg" width="100%">
+        <img src="{% static 'img/neiva.jpg' %}" width="100%">
       </div>
       <div class="intro_text">
         <h1>WHAT WE DO</h1>
@@ -245,7 +247,7 @@
       <section class="accordion-item">
         <div class="accordion-title">
           <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit ?</h1>
-          <a href="FAQ.html">+</a>
+          <a href="../FAQ">+</a>
         </div>
         <div class="accordion-item-content">
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
@@ -255,7 +257,7 @@
       <section class="accordion-item">
         <div class="accordion-title">
           <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit ?</h1>
-          <a href="FAQ.html">+</a>
+          <a href="../FAQ">+</a>
         </div>
         <div class="accordion-item-content">
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
@@ -265,7 +267,7 @@
       <section class="accordion-item">
         <div class="accordion-title">
           <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit ?</h1>
-          <a href="FAQ.html">+</a>
+          <a href="../FAQ">+</a>
         </div>
         <div class="accordion-item-content">
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
@@ -283,42 +285,42 @@
     <div class="container_img">
 
       <div id="sol_img" class="img_1">
-        <a href="solutions.html#clothing"></a>
+        <a href="../solutions#clothing"></a>
         <div class="sol_text">
           <p>Clothing/Apparel</p>
         </div>
       </div>
 
       <div id="sol_img" class="img_2">
-        <a href="solutions.html#environment"></a>
+        <a href="../solutions#environment"></a>
         <div class="sol_text">
           <p>Environment</p>
         </div>
       </div>
 
       <div id="sol_img" class="img_3">
-        <a href="solutions.html#games"></a>
+        <a href="../solutions#games"></a>
         <div class="sol_text">
           <p>Games</p>
         </div>
       </div>
 
       <div id="sol_img" class="img_4">
-        <a href="solutions.html#health"></a>
+        <a href="../solutions#health"></a>
         <div class="sol_text">
           <p>Health</p>
         </div>
       </div>
 
       <div id="sol_img" class="img_5">
-        <a href="solutions.html#transports"></a>
+        <a href="../solutions#transports"></a>
         <div class="sol_text">
           <p>Transports</p>
         </div>
 
       </div>
       <div id="sol_img" class="img_6">
-        <a href="solutions.html#supplies"></a>
+        <a href="../solutions#supplies"></a>
         <div class="sol_text">
           <p>Supplies</p>
         </div>
@@ -354,10 +356,10 @@
   <div class="footer_sep"> </div>
 
   <div class="footer_social">
-    <a href="https://www.facebook.com/ColorADDoficial/" target="_blank"><img src="img/fb.png" width="3%"></a>
-    <a href="https://www.linkedin.com/company/coloradd/" target="_blank"><img src="img/lkin.png" width="3%"></a>
-    <a href="https://twitter.com/coloraddoficial" target="_blank"><img src="img/tt.png" width="3%"></a>
-    <a href="https://www.instagram.com/coloradd_oficial/" target="_blank"><img src="img/insta.png" width="3%"></a>
+    <a href="https://www.facebook.com/ColorADDoficial/" target="_blank"><img src="{% static 'img/fb.png' %}" width="3%"></a>
+    <a href="https://www.linkedin.com/company/coloradd/" target="_blank"><img src="{% static 'img/lkin.png' %}" width="3%"></a>
+    <a href="https://twitter.com/coloraddoficial" target="_blank"><img src="{% static 'img/tt.png' %}" width="3%"></a>
+    <a href="https://www.instagram.com/coloradd_oficial/" target="_blank"><img src="{% static 'img/insta.png' %}" width="3%"></a>
   </div>
 
 </footer>
